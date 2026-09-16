@@ -1,9 +1,9 @@
 {
     "version": 1,
-    "name": "Player",
+    "name": "PlayerControls",
     "maps": [
         {
-            "name": "Player",
+            "name": "Movement",
             "id": "faa2c858-6620-4ffd-8700-2874fba6f5c2",
             "actions": [
                 {
@@ -23,20 +23,27 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "9b52facc-229e-45ab-8b34-62e8699be527",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "9aafd169-91b8-4724-b9b9-4373cf1f7914",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "88194a3f-29d5-42fb-a769-36d2c3798755",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "2D Vector",
                     "id": "91fd487e-9551-42a9-8333-8d335cf22ff6",
@@ -111,6 +118,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f08db37e-6610-4a7e-bdbf-0da55c5371a2",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5604a85e-7271-424a-9358-783e61a1526e",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
