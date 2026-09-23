@@ -1082,6 +1082,7 @@ GameObject:
   - component: {fileID: 853038781}
   - component: {fileID: 853038786}
   - component: {fileID: 853038787}
+  - component: {fileID: 853038788}
   m_Layer: 0
   m_Name: Body
   m_TagString: Player
@@ -1288,6 +1289,21 @@ MonoBehaviour:
     m_Bits: 64
   groundCheckDistance: 0.8
   groundCheckRadius: 0.3
+--- !u!114 &853038788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853038780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75733fb1242d7b40bb73ba7200d5ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
+  bulletPrefab: {fileID: 5638378671126979319, guid: 26aafba0ecd4c124d9c6c906614f715f, type: 3}
+  shootTransform: {fileID: 531947672}
+  bulletVelocity: 20
 --- !u!1 &936883458
 GameObject:
   m_ObjectHideFlags: 0
