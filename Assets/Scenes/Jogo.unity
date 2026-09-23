@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &853038787
@@ -1058,10 +1058,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9c0140947fa49a4f8e1957e3dc888ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  walkSpeed: 5
-  sprintSpeed: 8
-  jumpForce: 8
-  groundDrag: 15
+  walkSpeed: 10
+  sprintSpeed: 30
+  jumpForce: 15
+  groundDrag: 10
   airMultiplier: 0.4
   rotationSmoothTime: 0.1
   gravityScale: 2.5
@@ -1072,14 +1072,14 @@ MonoBehaviour:
   jumpCutMultiplier: 2
   coyoteTime: 0.1
   maxJumps: 2
-  flipRotationSpeed: 1440
+  flipRotationSpeed: 720
   cameraPivot: {fileID: 621895571}
   cameraTransform: {fileID: 330585546}
   cameraDistance: 5
   cameraHeight: 2
-  mouseSensitivity: 2
-  minVerticalAngle: -30
-  maxVerticalAngle: 60
+  mouseSensitivity: 0.1
+  minVerticalAngle: -90
+  maxVerticalAngle: 90
   cameraSmoothTime: 0.1
   collisionMask:
     serializedVersion: 2
@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 1547930360}
   - component: {fileID: 1547930359}
   - component: {fileID: 1547930358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: chao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
